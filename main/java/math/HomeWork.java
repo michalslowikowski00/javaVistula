@@ -1,31 +1,36 @@
 package math;
 
 public class HomeWork {
-    int numberToDivide;
-    int divider;
+    private short numberToDivide;
+    private short divider;
 
+    public HomeWork(short numberToDivide, short divider) {
+        this.numberToDivide = numberToDivide;
+        this.divider = divider;
 
-    public int getNumberToDivide() {
+    }
+
+    public short getNumberToDivide() {
+
         return numberToDivide;
     }
 
-    public void setNumberToDivide(int numberToDivide) {
+    public void setNumberToDivide(short numberToDivide) {
+
         this.numberToDivide = numberToDivide;
     }
 
-    public int getDivider() {
+    public short getDivider() {
+
         return divider;
     }
 
-    public void setDivider(int divider) {
+    public void setDivider(short divider) {
+
         this.divider = divider;
     }
 
-    public HomeWork() {
-
-    }
-
-    public int DivideNumbers(){
-        return numberToDivide / divider;
+    public short DivideNumbers(){
+        return (short)((numberToDivide+1)/divider);
     }
 }
